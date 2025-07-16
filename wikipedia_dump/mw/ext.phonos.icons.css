@@ -1,0 +1,26 @@
+
+/* start https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.phonos.icons&only=styles&skin=vector-2022&version=&* */
+
+
+.oo-ui-icon-volumeOff, .mw-ui-icon-volumeOff:before {
+	background-image: url(load.php);
+}
+.oo-ui-image-invert.oo-ui-icon-volumeOff, .mw-ui-icon-volumeOff-invert:before {
+	background-image: url(load.php);
+}
+.oo-ui-image-progressive.oo-ui-icon-volumeOff, .mw-ui-icon-volumeOff-progressive:before {
+	background-image: url(load.php);
+}
+.oo-ui-icon-volumeUp, .mw-ui-icon-volumeUp:before {
+	background-image: url(load.php);
+}
+.oo-ui-image-invert.oo-ui-icon-volumeUp, .mw-ui-icon-volumeUp-invert:before {
+	background-image: url(load.php);
+}
+.oo-ui-image-progressive.oo-ui-icon-volumeUp, .mw-ui-icon-volumeUp-progressive:before {
+	background-image: url(load.php);
+}
+
+
+
+/* end   https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.phonos.icons&only=styles&skin=vector-2022&version=&* */

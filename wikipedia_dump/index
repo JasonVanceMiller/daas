@@ -1,0 +1,395 @@
+<html><head>
+    <meta charset="UTF-8">
+    <title>Wikipedia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./masonry.min.js"></script>
+    <script src="./script.js"></script>
+<link href="./mobile_main_page.css" rel="stylesheet" type="text/css">
+<link href="./style.css" rel="stylesheet" type="text/css">
+<script src="./images_loaded.min.js"></script>
+<script src="./masonry.min.js"></script>
+<script src="./article_list_home.js"></script>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/">
+
+</head>
+
+<body class="article-list-home mw-body-content nojs"><div id="container"><div id="content"><a class="item" href="List_of_presidents_of_the_United_States">
+            <figure><img loading="lazy" src="./White_House_Washington.JPG">
+            <figcaption>List of presidents of the United States</figcaption></figure></a>
+
+<a class="item" href="Animal">
+            <figure><img loading="lazy" src="./Animal_diversity_b.png">
+            <figcaption>Animal</figcaption></figure></a>
+
+<a class="item" href="Eukaryote">
+            <figure><img loading="lazy" src="./Rhodomonas_salina_CCMP_322_(cropped).jpg">
+            <figcaption>Eukaryote</figcaption></figure></a>
+
+<a class="item" href="Bird">
+            <figure><img loading="lazy" src="./Bird_Diversity_2013.png">
+            <figcaption>Bird</figcaption></figure></a>
+
+<a class="item" href="List_of_states_and_territories_of_the_United_States">
+            <figure><img loading="lazy" src="./Map_of_USA_with_state_and_territory_names_2.png">
+            <figcaption>List of states and territories of the United States</figcaption></figure></a>
+
+<a class="item" href="Arthropod">
+            <figure><img loading="lazy" src="./Arthropoda_collage.png">
+            <figcaption>Arthropod</figcaption></figure></a>
+
+<a class="item" href="Michael_Jackson">
+            <figure><img loading="lazy" src="./Michael_Jackson_1983_(3x4_cropped)_(contrast).jpg">
+            <figcaption>Michael Jackson</figcaption></figure></a>
+
+<a class="item" href="Antarctica">
+            <figure><img loading="lazy" src="./Antarctica_(orthographic_projection).svg.png">
+            <figcaption>Antarctica</figcaption></figure></a>
+
+<a class="item" href="Catholic_Church">
+            <figure><img loading="lazy" src="./Saint_Peter's_Basilica_facade%252C_Rome%252C_Italy.jpg">
+            <figcaption>Catholic Church</figcaption></figure></a>
+
+<a class="item" href="William_Shakespeare">
+            <figure><img loading="lazy" src="./William_Shakespeare_by_John_Taylor%252C_edited.jpg">
+            <figcaption>William Shakespeare</figcaption></figure></a>
+
+<a class="item" href="Amphibian">
+            <figure><img loading="lazy" src="./Litoria_phyllochroa.JPG">
+            <figcaption>Amphibian</figcaption></figure></a>
+
+<a class="item" href="Enzyme">
+            <figure><img loading="lazy" src="./Glucosidase_enzyme.png">
+            <figcaption>Enzyme</figcaption></figure></a>
+
+<a class="item" href="Midfielder">
+            <figure><img loading="lazy" src="./Boisko.svg.png">
+            <figcaption>Midfielder</figcaption></figure></a>
+
+<a class="item" href="Virus">
+            <figure><img loading="lazy" src="./Coronavirus._SARS-CoV-2.png">
+            <figcaption>Virus</figcaption></figure></a>
+
+<a class="item" href="Mollusca">
+            <figure><img loading="lazy" src="./Mollusca_Diversity.png">
+            <figcaption>Mollusca</figcaption></figure></a>
+
+<a class="item" href="Turtle">
+            <figure><img loading="lazy" src="./Florida_Box_Turtle_Digon3.jpg">
+            <figcaption>Turtle</figcaption></figure></a>
+
+<a class="item" href="Human">
+            <figure><img loading="lazy" src="./Akha_cropped_hires.JPG">
+            <figcaption>Human</figcaption></figure></a>
+
+<a class="item" href="Kit_(association_football)">
+            <figure><img loading="lazy" src="./Pavel_Nedv%C4%9Bd.jpg">
+            <figcaption>Kit (association football)</figcaption></figure></a>
+
+<a class="item" href="President_of_the_United_States">
+            <figure><img loading="lazy" src="./Flag_of_the_President_of_the_United_States.svg.png">
+            <figcaption>President of the United States</figcaption></figure></a>
+
+<a class="item" href="Ant">
+            <figure><img loading="lazy" src="./Red_Ant_-_March_2025.jpg">
+            <figcaption>Ant</figcaption></figure></a>
+
+<a class="item" href="Red_fox">
+            <figure><img loading="lazy" src="./Vulpes_vulpes_ssp_fulvus.jpg">
+            <figcaption>Red fox</figcaption></figure></a>
+
+<a class="item" href="Beetle">
+            <figure><img loading="lazy" src="./Coleoptera_collage.png">
+            <figcaption>Beetle</figcaption></figure></a>
+
+<a class="item" href="Elizabeth_II">
+            <figure><img loading="lazy" src="./Queen_Elizabeth_II_official_portrait_for_1959_tour_(retouched)_(cropped)_(3-to-4_aspect_ratio).jpg">
+            <figcaption>Elizabeth II</figcaption></figure></a>
+
+<a class="item" href="Nelson_Mandela">
+            <figure><img loading="lazy" src="./Nelson_Mandela_1994.jpg">
+            <figcaption>Nelson Mandela</figcaption></figure></a>
+
+<a class="item" href="Elvis_Presley">
+            <figure><img loading="lazy" src="./Elvis_Presley_promoting_Jailhouse_Rock.jpg">
+            <figcaption>Elvis Presley</figcaption></figure></a>
+
+<a class="item" href="Arabic">
+            <figure><img loading="lazy" src="./Arabic_speaking_world.svg.png">
+            <figcaption>Arabic</figcaption></figure></a>
+
+<a class="item" href="Rodent">
+            <figure><img loading="lazy" src="./Hydrochoeris_hydrochaeris_in_Brazil_in_Petr%C3%B3polis%252C_Rio_de_Janeiro%252C_Brazil_09.jpg">
+            <figcaption>Rodent</figcaption></figure></a>
+
+<a class="item" href="Maya_civilization">
+            <figure><img loading="lazy" src="./Mayamap.png">
+            <figcaption>Maya civilization</figcaption></figure></a>
+
+<a class="item" href="Protein">
+            <figure><img loading="lazy" src="./Myoglobin.png">
+            <figcaption>Protein</figcaption></figure></a>
+
+<a class="item" href="HIV">
+            <figure><img loading="lazy" src="./HIV-budding-Color.jpg">
+            <figcaption>HIV</figcaption></figure></a>
+
+<a class="item" href="London">
+            <figure><img loading="lazy" src="./London_Skyline_(125508655).jpeg">
+            <figcaption>London</figcaption></figure></a>
+
+<a class="item" href="Insect">
+            <figure><img loading="lazy" src="./Insects_-_Neoptera_-_Paleoptera_-_Apterygota.jpg">
+            <figcaption>Insect</figcaption></figure></a>
+
+<a class="item" href="Evolution">
+            <figure><img loading="lazy" src="./Darwin_Tree_1837.png">
+            <figcaption>Evolution</figcaption></figure></a>
+
+<a class="item" href="Canadians">
+            <figure><img loading="lazy" src="./Flag_of_Canada_(Pantone).svg.png">
+            <figcaption>Canadians</figcaption></figure></a>
+
+<a class="item" href="George_III">
+            <figure><img loading="lazy" src="./Allan_Ramsay_-_King_George_III_in_coronation_robes_-_Google_Art_Project.jpg">
+            <figcaption>George III</figcaption></figure></a>
+
+<a class="item" href="Anfield">
+            <figure><img loading="lazy" src="./Panorama_of_Anfield_with_new_main_stand_(29676137824).jpg">
+            <figcaption>Anfield</figcaption></figure></a>
+
+<a class="item" href="List_of_national_parks_of_the_United_States">
+            <figure><img loading="lazy" src="./RNS_Yellowstone_13399u.jpg">
+            <figcaption>List of national parks of the United States</figcaption></figure></a>
+
+<a class="item" href="George_IV">
+            <figure><img loading="lazy" src="./King_George_IV_of_the_United_Kingdom_in_Coronation_Robes_(by_Thomas_Lawrence)_-_Royal_Collection_(RCIN_405918).jpg">
+            <figcaption>George IV</figcaption></figure></a>
+
+<a class="item" href="Dinosaur">
+            <figure><img loading="lazy" src="./Frenguellisaurus_ischigualastensis_DSC_6185.jpg">
+            <figcaption>Dinosaur</figcaption></figure></a>
+
+<a class="item" href="The_Beatles">
+            <figure><img loading="lazy" src="./The_Beatles_members_at_New_York_City_in_1964.jpg">
+            <figcaption>The Beatles</figcaption></figure></a>
+
+<a class="item" href="Alcoholism">
+            <figure><img loading="lazy" src="./A_wife_asking_her_drunkard_husband_to_hand_over_a_bottle_Wellcome_L0067935.jpg">
+            <figcaption>Alcoholism</figcaption></figure></a>
+
+<a class="item" href="Myocardial_infarction">
+            <figure><img loading="lazy" src="./Blausen_0463_HeartAttack.png">
+            <figcaption>Myocardial infarction</figcaption></figure></a>
+
+<a class="item" href="List_of_Roman_emperors">
+            <figure><img loading="lazy" src="./Statue-Augustus.jpg">
+            <figcaption>List of Roman emperors</figcaption></figure></a>
+
+<a class="item" href="Bivalvia">
+            <figure><img loading="lazy" src="./Haeckel_Acephala.jpg">
+            <figcaption>Bivalvia</figcaption></figure></a>
+
+<a class="item" href="Washington%2C_D.C.">
+            <figure><img loading="lazy" src="./12-07-13-washington-by-RalfR-08.jpg">
+            <figcaption>Washington, D.C.</figcaption></figure></a>
+
+<a class="item" href="Anatomical_terms_of_location">
+            <figure><img loading="lazy" src="./View_of_Viscera_Page_82.jpg">
+            <figcaption>Anatomical terms of location</figcaption></figure></a>
+
+<a class="item" href="Solar_eclipse">
+            <figure><img loading="lazy" src="./Solar_eclipse_1999_4.jpg">
+            <figcaption>Solar eclipse</figcaption></figure></a>
+
+<a class="item" href="U.S._state">
+            <figure><img loading="lazy" src="./Map_of_USA_with_state_names_2.svg.png">
+            <figcaption>U.S. state</figcaption></figure></a>
+
+<a class="item" href="Voting_Rights_Act_of_1965">
+            <figure><img loading="lazy" src="./Great_Seal_of_the_United_States_(obverse).svg.png">
+            <figcaption>Voting Rights Act of 1965</figcaption></figure></a>
+
+<a class="item" href="California_gold_rush">
+            <figure><img loading="lazy" src="./1850_Woman_and_Men_in_California_Gold_Rush.jpg">
+            <figcaption>California gold rush</figcaption></figure></a>
+
+<a class="item" href="United_States_Declaration_of_Independence">
+            <figure><img loading="lazy" src="./United_States_Declaration_of_Independence.jpg">
+            <figcaption>United States Declaration of Independence</figcaption></figure></a>
+
+<a class="item" href="Plant">
+            <figure><img loading="lazy" src="./Fr%C3%BChling_bl%C3%BChender_Kirschenbaum.jpg">
+            <figcaption>Plant</figcaption></figure></a>
+
+<a class="item" href="Bob_Dylan">
+            <figure><img loading="lazy" src="./DylanYoungKilkenny140719v2_(50_of_52)_(52246124397)_(cropped).jpg">
+            <figcaption>Bob Dylan</figcaption></figure></a>
+
+<a class="item" href="Lion">
+            <figure><img loading="lazy" src="./020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg">
+            <figcaption>Lion</figcaption></figure></a>
+
+<a class="item" href="YouTube">
+            <figure><img loading="lazy" src="./Youtube_interface%252C_showing_search_results_of_Burger_Recipe.png">
+            <figcaption>YouTube</figcaption></figure></a>
+
+<a class="item" href="Leopard">
+            <figure><img loading="lazy" src="./African_leopard_male_(cropped).jpg">
+            <figcaption>Leopard</figcaption></figure></a>
+
+<a class="item" href="World_Heritage_Site">
+            <figure><img loading="lazy" src="./World_Heritage_Logo_global.svg.png">
+            <figcaption>World Heritage Site</figcaption></figure></a>
+
+<a class="item" href="Goalkeeper_(association_football)">
+            <figure><img loading="lazy" src="./Iker_Casillas_Euro_2012_final_02.jpg">
+            <figcaption>Goalkeeper (association football)</figcaption></figure></a>
+
+<a class="item" href="Carl_Linnaeus">
+            <figure><img loading="lazy" src="./lossy-page1-500px-Carl_von_Linn%C3%A9%252C_1707-1778%252C_botanist%252C_professor_(Alexander_Roslin)_-_Nationalmuseum_-_15723.tif.jpg">
+            <figcaption>Carl Linnaeus</figcaption></figure></a>
+
+<a class="item" href="Defender_(association_football)">
+            <figure><img loading="lazy" src="./Leah_Williamson_Arsenal_Ladies_Vs_Liverpool_(19482185928).jpg">
+            <figcaption>Defender (association football)</figcaption></figure></a>
+
+<a class="item" href="World_Trade_Center_(1973%E2%80%932001)">
+            <figure><img loading="lazy" src="./World_Trade_Center%252C_New_York_City_-_aerial_view_(March_2001)_(modified_version_with_desaturated_towers).jpg">
+            <figcaption>World Trade Center (1973–2001)</figcaption></figure></a>
+
+<a class="item" href="Old_Trafford">
+            <figure><img loading="lazy" src="./Manchester_United_Panorama_(8051523746).jpg">
+            <figcaption>Old Trafford</figcaption></figure></a>
+
+<a class="item" href="Singapore">
+            <figure><img loading="lazy" src="./Flag_of_Singapore.svg.png">
+            <figcaption>Singapore</figcaption></figure></a>
+
+<a class="item" href="Flowering_plant">
+            <figure><img loading="lazy" src="./Ranunculus_repens_1_(cropped).JPG">
+            <figcaption>Flowering plant</figcaption></figure></a>
+
+<a class="item" href="Bobcat">
+            <figure><img loading="lazy" src="./Bobcat_at_Columbus_Zoo_Boo.jpg">
+            <figcaption>Bobcat</figcaption></figure></a>
+
+<a class="item" href="Malaysia">
+            <figure><img loading="lazy" src="./Flag_of_Malaysia.svg.png">
+            <figcaption>Malaysia</figcaption></figure></a>
+
+<a class="item" href="Thirteenth_Amendment_to_the_United_States_Constitution">
+            <figure><img loading="lazy" src="./Greater_coat_of_arms_of_the_United_States.svg.png">
+            <figcaption>Thirteenth Amendment to the United States Constitution</figcaption></figure></a>
+
+<a class="item" href="Mariah_Carey">
+            <figure><img loading="lazy" src="./Mariah_Carey_Library_of_Congress_2023_1_Cropped_3.png">
+            <figcaption>Mariah Carey</figcaption></figure></a>
+
+<a class="item" href="Frog">
+            <figure><img loading="lazy" src="./Anoures.jpg">
+            <figcaption>Frog</figcaption></figure></a>
+
+<a class="item" href="Forward_(association_football)">
+            <figure><img loading="lazy" src="./Football_in_Bloomington%252C_Indiana%252C_1995.jpg">
+            <figcaption>Forward (association football)</figcaption></figure></a>
+
+<a class="item" href="Bat">
+            <figure><img loading="lazy" src="./Wikipedia-Bats-001-v01.jpg">
+            <figcaption>Bat</figcaption></figure></a>
+
+<a class="item" href="Fungus">
+            <figure><img loading="lazy" src="./Fungi_collage.jpg">
+            <figcaption>Fungus</figcaption></figure></a>
+
+<a class="item" href="Emu">
+            <figure><img loading="lazy" src="./Emu_1_-_Tidbinbilla.jpg">
+            <figcaption>Emu</figcaption></figure></a>
+
+<a class="item" href="Lady_Gaga">
+            <figure><img loading="lazy" src="./Lady_Gaga_at_Joe_Biden's_inauguration_(cropped_5).jpg">
+            <figcaption>Lady Gaga</figcaption></figure></a>
+
+<a class="item" href="Raccoon">
+            <figure><img loading="lazy" src="./Raccoon_in_Central_Park_(35264).jpg">
+            <figcaption>Raccoon</figcaption></figure></a>
+
+<a class="item" href="Precipitation">
+            <figure><img loading="lazy" src="./Countries_by_average_annual_precipitation.png">
+            <figcaption>Precipitation</figcaption></figure></a>
+
+<a class="item" href="Martin_Luther_King_Jr.">
+            <figure><img loading="lazy" src="./Martin_Luther_King%252C_Jr..jpg">
+            <figcaption>Martin Luther King Jr.</figcaption></figure></a>
+
+<a class="item" href="Charlie_Chaplin">
+            <figure><img loading="lazy" src="./Charlie_Chaplin_portrait.jpg">
+            <figcaption>Charlie Chaplin</figcaption></figure></a>
+
+<a class="item" href="Wayback_Machine">
+            <figure><img loading="lazy" src="./Wayback_Machine_logo_2010.svg.png">
+            <figcaption>Wayback Machine</figcaption></figure></a>
+
+<a class="item" href="Dublin">
+            <figure><img loading="lazy" src="./Dublin_-_aerial_-_panorama_-_2025-02-06.jpg">
+            <figcaption>Dublin</figcaption></figure></a>
+
+<a class="item" href="Thierry_Henry">
+            <figure><img loading="lazy" src="./Thierry_Henry_(51649035951)_(cropped).jpg">
+            <figcaption>Thierry Henry</figcaption></figure></a>
+
+<a class="item" href="Amazon_(company)">
+            <figure><img loading="lazy" src="./Amazon_Tower_I_topped_out%252C_June_2015.jpg">
+            <figcaption>Amazon (company)</figcaption></figure></a>
+
+<a class="item" href="Germany">
+            <figure><img loading="lazy" src="./Flag_of_Germany.svg.png">
+            <figcaption>Germany</figcaption></figure></a>
+
+<a class="item" href="HIV/AIDS">
+            <figure><img loading="lazy" src="./Red_Ribbon.svg.png">
+            <figcaption>HIV/AIDS</figcaption></figure></a>
+
+<a class="item" href="Wales">
+            <figure><img loading="lazy" src="./Flag_of_Wales.svg.png">
+            <figcaption>Wales</figcaption></figure></a>
+
+<a class="item" href="Jaguar">
+            <figure><img loading="lazy" src="./Standing_jaguar.jpg">
+            <figcaption>Jaguar</figcaption></figure></a>
+
+<a class="item" href="African_Americans">
+            <figure><img loading="lazy" src="./Black_Americans_2020_County.png">
+            <figcaption>African Americans</figcaption></figure></a>
+
+<a class="item" href="Native_Americans_in_the_United_States">
+            <figure><img loading="lazy" src="./Indigenous_Americans_by_county.png">
+            <figcaption>Native Americans in the United States</figcaption></figure></a>
+
+<a class="item" href="Video_game">
+            <figure><img loading="lazy" src="./Universum_TV_Multispiel_2006.jpg">
+            <figcaption>Video game</figcaption></figure></a>
+
+<a class="item" href="Tiger">
+            <figure><img loading="lazy" src="./Walking_tiger_female.jpg">
+            <figcaption>Tiger</figcaption></figure></a>
+
+<a class="item" href="Spanish_language">
+            <figure><img loading="lazy" src="./Map-Hispanophone_World.svg.png">
+            <figcaption>Spanish language</figcaption></figure></a>
+
+<a class="item" href="Hong_Kong">
+            <figure><img loading="lazy" src="./Flag_of_Hong_Kong.svg.png">
+            <figcaption>Hong Kong</figcaption></figure></a>
+
+<a class="item" href="Birmingham">
+            <figure><img loading="lazy" src="./Birmingham_Council_House_and_103_Colmore_Row.jpg">
+            <figcaption>Birmingham</figcaption></figure></a>
+
+<a class="item" href="Gene">
+            <figure><img loading="lazy" src="./Chromosome_DNA_Gene_unannotated.svg.png">
+            <figcaption>Gene</figcaption></figure></a>
+
+<a class="item" href="Record_label">
+            <figure><img loading="lazy" src="./Universal_Music_Group_logo.svg.png">
+            <figcaption>Record label</figcaption></figure></a>
+</div></div></body></html>

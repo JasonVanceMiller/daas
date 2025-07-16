@@ -1,0 +1,25 @@
+
+/* start https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.chart.styles&only=styles&skin=vector-2022&version=&* */
+
+
+wiki-chart {
+  clear: both;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+wiki-chart > svg {
+  width: 100%;
+}
+.client-js .ext-chart-js wiki-chart > svg {
+  filter: blur(10px);
+}
+/* Workaround for https://github.com/apache/echarts/issues/16419 */
+/* @noflip */
+wiki-chart text {
+  direction: ltr;
+}
+
+
+
+/* end   https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.chart.styles&only=styles&skin=vector-2022&version=&* */

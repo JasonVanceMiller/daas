@@ -1,0 +1,34 @@
+
+/* start https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.imagemap.styles&only=styles&skin=vector-2022&version=&* */
+
+
+.mw-ext-imagemap-inner {
+  display: inline-block;
+  position: relative;
+}
+.mw-ext-imagemap-desc-link {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(desc-20.png);
+}
+.mw-ext-imagemap-desc-top-right > :not( figcaption ) .mw-ext-imagemap-desc-link {
+  top: 5px;
+  right: 5px;
+}
+.mw-ext-imagemap-desc-bottom-right > :not( figcaption ) .mw-ext-imagemap-desc-link {
+  bottom: 5px;
+  right: 5px;
+}
+.mw-ext-imagemap-desc-bottom-left > :not( figcaption ) .mw-ext-imagemap-desc-link {
+  bottom: 5px;
+  left: 5px;
+}
+.mw-ext-imagemap-desc-top-left > :not( figcaption ) .mw-ext-imagemap-desc-link {
+  top: 5px;
+  left: 5px;
+}
+
+
+
+/* end   https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.imagemap.styles&only=styles&skin=vector-2022&version=&* */

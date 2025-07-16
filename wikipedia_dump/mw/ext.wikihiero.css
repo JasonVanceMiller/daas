@@ -1,0 +1,112 @@
+
+/* start https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.wikihiero&only=styles&skin=vector-2022&version=&* */
+
+
+/**
+ * Styles for wiki pages using the <hiero> parser tag.
+ */
+/**
+ * ###IMPORTANT:##
+ * If editing this file, please also edit the respective file in the MinervaNeue skin.
+ * ####
+ *
+ * This file is a LESS @import match for "mediawiki.skin.variables.less"
+ * when Vector 2022 is the active skin.
+ * Please note, that legacy Vector is handled by
+ * "mediawiki.less.legacy/mediawiki.skin.variables.less".
+ *
+ * Please also note, that both current Codex, design system for Wikimedia based skins,
+ * Vector 2022 and Minerva Neue are using the same variable values respectively in their
+ * repositories.
+ */
+/* stylelint-disable @stylistic/indentation */
+/**
+ * Codex design tokens. This imports Less variables, some of which refer to CSS variables.
+ * The CSS variable values are imported in CSSCustomProperties.less.
+ */
+.mw-hiero-table {
+  border: 0;
+  border-spacing: 0;
+}
+/* The CSS selector is intentionally overly-specific, mentioning the tag table
+as more generic table td rules may exist (particularly in MediaWiki:Common.css)
+More information: T43869 */
+table.mw-hiero-table td {
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.mw-hiero-box {
+  background: var(--background-color-inverted, #101418);
+}
+.mw-mirrored {
+  transform: scaleX(-1);
+}
+
+/**
+ * Styles for Special:Hieroglyphs
+ */
+/**
+ * ###IMPORTANT:##
+ * If editing this file, please also edit the respective file in the MinervaNeue skin.
+ * ####
+ *
+ * This file is a LESS @import match for "mediawiki.skin.variables.less"
+ * when Vector 2022 is the active skin.
+ * Please note, that legacy Vector is handled by
+ * "mediawiki.less.legacy/mediawiki.skin.variables.less".
+ *
+ * Please also note, that both current Codex, design system for Wikimedia based skins,
+ * Vector 2022 and Minerva Neue are using the same variable values respectively in their
+ * repositories.
+ */
+/* stylelint-disable @stylistic/indentation */
+/**
+ * Codex design tokens. This imports Less variables, some of which refer to CSS variables.
+ * The CSS variable values are imported in CSSCustomProperties.less.
+ */
+.mw-hiero-form {
+  position: -webkit-sticky;
+  /* stylelint-disable-line plugin/no-unsupported-browser-features */
+  position: sticky;
+  /* stylelint-disable-line plugin/no-unsupported-browser-features */
+  top: 0;
+  background: var(--background-color-base, #fff);
+  padding: 1em 0;
+  /* Position above mw-mirror */
+  z-index: 1;
+}
+.mw-hiero-code {
+  display: inline-block;
+  border: 1px solid var(--border-color-base, #a2a9b1);
+  margin: 0 1px 1px 0;
+  text-align: center;
+}
+.client-js .mw-hiero-code {
+  cursor: pointer;
+}
+.mw-hiero-glyph {
+  min-height: 46px;
+  min-width: 40px;
+  display: block;
+  vertical-align: top;
+  padding: 2px;
+}
+.mw-hiero-glyph .mw-hiero-table {
+  min-height: 40px;
+  margin: 0 auto;
+}
+.mw-hiero-syntax {
+  display: block;
+}
+.mw-hiero-toc {
+  margin-top: 1em;
+  text-align: center;
+}
+.mw-hiero-toc a {
+  margin-right: 0.5em;
+}
+
+
+
+/* end   https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.wikihiero&only=styles&skin=vector-2022&version=&* */

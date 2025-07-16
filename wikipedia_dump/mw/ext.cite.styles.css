@@ -1,0 +1,121 @@
+
+/* start https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.cite.styles&only=styles&skin=vector-2022&version=&* */
+
+
+/**
+ * ###IMPORTANT:##
+ * If editing this file, please also edit the respective file in the MinervaNeue skin.
+ * ####
+ *
+ * This file is a LESS @import match for "mediawiki.skin.variables.less"
+ * when Vector 2022 is the active skin.
+ * Please note, that legacy Vector is handled by
+ * "mediawiki.less.legacy/mediawiki.skin.variables.less".
+ *
+ * Please also note, that both current Codex, design system for Wikimedia based skins,
+ * Vector 2022 and Minerva Neue are using the same variable values respectively in their
+ * repositories.
+ */
+/* stylelint-disable @stylistic/indentation */
+/**
+ * Codex design tokens. This imports Less variables, some of which refer to CSS variables.
+ * The CSS variable values are imported in CSSCustomProperties.less.
+ */
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+.mw-cite-backlink,
+.cite-accessibility-label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.mw-references-columns {
+  -moz-column-width: 30em;
+  column-width: 30em;
+  margin-top: 0.3em;
+  /* Lines first column up nicely. */
+  /* Avoid elements from breaking between columns */
+}
+.mw-parser-output .mw-references-columns .references {
+  margin-top: 0;
+}
+.mw-references-columns li {
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+ol.references {
+  /**
+	 * Resetting *any* counter on an <ol> element messes up the built-in numbering in Firefox.
+	 * Explicitly resetting the built-in "list-item" counter fixes this.
+	 *
+	 * We have 2 counters for Parsoid HTML for different functionality.
+	 * Make sure both are reset!
+	 **/
+  counter-reset: mw-ref-extends-parent mw-references list-item;
+}
+ol.references > li {
+  /**
+		 * We have 2 counters for Parsoid HTML for different functionality.
+		 * Make sure both are incremented!
+		 **/
+  counter-increment: mw-ref-extends-parent mw-references;
+  counter-reset: mw-ref-extends-child;
+}
+ol.references .mw-subreference-list {
+  list-style: none;
+  margin-left: 2em;
+  padding: 0;
+}
+.mw-subreference-list > li::before {
+  counter-increment: mw-ref-extends-child;
+  content: counter(mw-ref-extends-parent, decimal) '.' counter(mw-ref-extends-child, decimal) '. ';
+}
+sup.reference {
+  /* Isolation to fix references in case of RTL words at the end of a reference */
+  unicode-bidi: -moz-isolate;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+  /* Don't allow a reference that includes a group name
+	to break in the end of the line */
+  white-space: nowrap;
+  /* Do not inherit bold or italic */
+  font-weight: normal;
+  font-style: normal;
+}
+/* Highlight clicked reference in blue to help navigation */
+ol.references li:target,
+sup.reference:target {
+  background-color: var(--background-color-progressive-subtle, #f1f4fd);
+}
+/* Make cite errors "strong" */
+.mw-ext-cite-error {
+  font-weight: bold;
+  /* For the case that the error is embedded in an element with a different direction */
+  unicode-bidi: embed;
+}
+.mw-ext-cite-error code {
+  /* As code is inheriting `#f8f9fa` as background color from `code`,
+		   we need to increase contrast, by setting it to `transparent`. See T247903. */
+  background-color: transparent;
+  color: inherit;
+  /* Reduce inherited `padding` to make code fit in better in Resources list. */
+  padding: 1px 2px;
+}
+/* @noflip */
+.mw-cite-dir-ltr .reference-text {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+/* @noflip */
+.mw-cite-dir-rtl .reference-text {
+  direction: rtl;
+  unicode-bidi: embed;
+}@media print {
+	.mw-cite-backlink {
+	  display: none;
+	}}
+
+
+
+/* end   https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.cite.styles&only=styles&skin=vector-2022&version=&* */

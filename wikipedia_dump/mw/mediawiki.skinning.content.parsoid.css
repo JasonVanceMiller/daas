@@ -1,0 +1,417 @@
+
+/* start https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=mediawiki.skinning.content.parsoid&only=styles&skin=vector-2022&version=&* */
+
+
+/**
+ * Style Parsoid HTML+RDFa output consistent with wikitext from PHP parser.
+ */
+/*
+ * Auto-numbered external links
+ * Parsoid renders those as link without content, and lets CSS do the
+ * counting. This way the counting style can be customized, and counts update
+ * automatically when content is modified.
+ */
+.mw-parser-output {
+  counter-reset: mw-numbered-ext-link;
+}
+.mw-parser-output a[rel~='mw:ExtLink']:empty::after {
+  content: '[' counter(mw-numbered-ext-link) ']';
+  counter-increment: mw-numbered-ext-link;
+}
+
+/* stylelint-disable selector-class-pattern */
+/**
+ * ###IMPORTANT:##
+ * If editing this file, please also edit the respective file in the MinervaNeue skin.
+ * ####
+ *
+ * This file is a LESS @import match for "mediawiki.skin.variables.less"
+ * when Vector 2022 is the active skin.
+ * Please note, that legacy Vector is handled by
+ * "mediawiki.less.legacy/mediawiki.skin.variables.less".
+ *
+ * Please also note, that both current Codex, design system for Wikimedia based skins,
+ * Vector 2022 and Minerva Neue are using the same variable values respectively in their
+ * repositories.
+ */
+/* stylelint-disable @stylistic/indentation */
+/**
+ * Codex design tokens. This imports Less variables, some of which refer to CSS variables.
+ * The CSS variable values are imported in CSSCustomProperties.less.
+ */
+/**
+ * Block media items
+ */
+figure[typeof~='mw:File'],
+figure[typeof~='mw:File/Frameless'] {
+  /* Hide the caption for frameless and plain floated images */
+}
+.mw-body-content figure[typeof~='mw:File'] > a,
+.mw-body-content figure[typeof~='mw:File/Frameless'] > a {
+  border: 0;
+}
+figure[typeof~='mw:File'].mw-halign-right,
+figure[typeof~='mw:File/Frameless'].mw-halign-right {
+  /* @noflip */
+  margin: 0 0 0.5em 0.5em;
+  /* @noflip */
+  clear: right;
+  /* @noflip */
+  float: right;
+}
+figure[typeof~='mw:File'].mw-halign-left,
+figure[typeof~='mw:File/Frameless'].mw-halign-left {
+  /* @noflip */
+  margin: 0 0.5em 0.5em 0;
+  /* @noflip */
+  clear: left;
+  /* @noflip */
+  float: left;
+}
+figure[typeof~='mw:File'].mw-halign-none,
+figure[typeof~='mw:File/Frameless'].mw-halign-none {
+  clear: none;
+  float: none;
+}
+figure[typeof~='mw:File'].mw-halign-center,
+figure[typeof~='mw:File/Frameless'].mw-halign-center {
+  /* Matches *.center * in element.css */
+  margin: 0 auto;
+  display: table;
+  border-collapse: collapse;
+  clear: none;
+  float: none;
+}
+figure[typeof~='mw:File'] > figcaption,
+figure[typeof~='mw:File/Frameless'] > figcaption {
+  display: none;
+}
+figure[typeof~='mw:File/Thumb'],
+figure[typeof~='mw:File/Frame'] {
+  display: table;
+  text-align: center;
+  border-collapse: collapse;
+  line-height: 0;
+  margin: 0.5em 0 1.3em 1.4em;
+  clear: right;
+  float: right;
+}
+.mw-body-content figure[typeof~='mw:File/Thumb'] > a,
+.mw-body-content figure[typeof~='mw:File/Frame'] > a {
+  border: 0;
+}
+.mw-content-ltr figure[typeof~='mw:File/Thumb'],
+.mw-content-ltr figure[typeof~='mw:File/Frame'] {
+  /* @noflip */
+  margin: 0.5em 0 1.3em 1.4em;
+  /* @noflip */
+  clear: right;
+  /* @noflip */
+  float: right;
+}
+.mw-content-rtl figure[typeof~='mw:File/Thumb'],
+.mw-content-rtl figure[typeof~='mw:File/Frame'] {
+  /* @noflip */
+  margin: 0.5em 1.4em 1.3em 0;
+  /* @noflip */
+  clear: left;
+  /* @noflip */
+  float: left;
+}
+figure[typeof~='mw:File/Thumb'].mw-halign-right,
+figure[typeof~='mw:File/Frame'].mw-halign-right {
+  /* @noflip */
+  margin: 0.5em 0 1.3em 1.4em;
+  /* @noflip */
+  clear: right;
+  /* @noflip */
+  float: right;
+}
+figure[typeof~='mw:File/Thumb'].mw-halign-left,
+figure[typeof~='mw:File/Frame'].mw-halign-left {
+  /* @noflip */
+  margin: 0.5em 1.4em 1.3em 0;
+  /* @noflip */
+  clear: left;
+  /* @noflip */
+  float: left;
+}
+figure[typeof~='mw:File/Thumb'].mw-halign-none,
+figure[typeof~='mw:File/Frame'].mw-halign-none {
+  /* Override the default margin from mw-content-xxx above */
+  margin: 0;
+  margin-bottom: 0.5em;
+  clear: none;
+  float: none;
+}
+figure[typeof~='mw:File/Thumb'].mw-halign-center,
+figure[typeof~='mw:File/Frame'].mw-halign-center {
+  /* Override the default margin from mw-content-xxx above
+		 * And, matches *.center * in element.css
+		 */
+  margin: 0 auto 0.5em auto;
+  clear: none;
+  float: none;
+}
+figure[typeof~='mw:File/Thumb'] > :not( figcaption ),
+figure[typeof~='mw:File/Frame'] > :not( figcaption ) {
+  /**
+		 * Broken media get a span instead.
+		 */
+}
+figure[typeof~='mw:File/Thumb'] > :not( figcaption ) .mw-file-element,
+figure[typeof~='mw:File/Frame'] > :not( figcaption ) .mw-file-element {
+  margin: 3px;
+}
+figure[typeof~='mw:File/Thumb'] > :not( figcaption ) .mw-broken-media,
+figure[typeof~='mw:File/Frame'] > :not( figcaption ) .mw-broken-media {
+  display: inline-block;
+  line-height: 1.6em;
+  word-break: break-word;
+  /* This is hardcoded in Linker::makeThumbLink2 for broken media */
+  width: 180px;
+  /* Styles the text of broken media */
+  font-size: 94%;
+}
+figure[typeof~='mw:File/Thumb'] > figcaption,
+figure[typeof~='mw:File/Frame'] > figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  background-color: inherit;
+  line-height: 1.4em;
+  /**
+		 * The "break-word" value is deprecated, however, it's well supported
+		 * at 94.73%
+		 * https://caniuse.com/mdn-css_properties_word-break_break-word
+		 *
+		 * The spec suggests it has the same effect as,
+		 *
+		 *   word-break: normal;
+		 *   overflow-wrap: anywhere;
+		 *
+		 * https://drafts.csswg.org/css-text-3/#word-break-property
+		 *
+		 * So, we should use that.  However, support for "anywhere" is lagging
+		 * at just 72.39%, with Safari being a notable miss.
+		 * https://caniuse.com/mdn-css_properties_overflow-wrap_anywhere
+		 *
+		 * "Soft wrap opportunities introduced by the word break are considered
+		 * when calculating min-content intrinsic sizes."
+		 * From https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
+		 */
+  word-break: break-word;
+  text-align: start;
+  /* taken from .thumbcaption, plus .thumbinner */
+  padding: 0 6px 6px 6px;
+}
+/**
+ * Disable floating on mobile devices and automatically center on the page.
+ * This overrides any inline styles in the process.
+ */
+@media all and (max-width: calc(640px - 1px)) {
+  body.skin--responsive figure {
+    /* stylelint-disable-next-line declaration-no-important */
+    margin: 0 auto !important;
+    /* stylelint-disable-next-line declaration-no-important */
+    float: none !important;
+  }
+}
+figure[typeof~='mw:File/Frame'] > figcaption:empty {
+  padding-bottom: 0;
+}
+figure[typeof~='mw:File/Thumb'] > figcaption:empty {
+  padding-bottom: 3px;
+}
+/**
+ * Inline media items
+ */
+.mw-valign-middle .mw-file-element {
+  vertical-align: middle;
+}
+.mw-valign-baseline .mw-file-element {
+  vertical-align: baseline;
+}
+.mw-valign-sub .mw-file-element {
+  vertical-align: sub;
+}
+.mw-valign-super .mw-file-element {
+  vertical-align: super;
+}
+.mw-valign-top .mw-file-element {
+  vertical-align: top;
+}
+.mw-valign-text-top .mw-file-element {
+  vertical-align: text-top;
+}
+.mw-valign-bottom .mw-file-element {
+  vertical-align: bottom;
+}
+.mw-valign-text-bottom .mw-file-element {
+  vertical-align: text-bottom;
+}
+
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+/**
+ * ###IMPORTANT:##
+ * If editing this file, please also edit the respective file in the MinervaNeue skin.
+ * ####
+ *
+ * This file is a LESS @import match for "mediawiki.skin.variables.less"
+ * when Vector 2022 is the active skin.
+ * Please note, that legacy Vector is handled by
+ * "mediawiki.less.legacy/mediawiki.skin.variables.less".
+ *
+ * Please also note, that both current Codex, design system for Wikimedia based skins,
+ * Vector 2022 and Minerva Neue are using the same variable values respectively in their
+ * repositories.
+ */
+/* stylelint-disable @stylistic/indentation */
+/**
+ * Codex design tokens. This imports Less variables, some of which refer to CSS variables.
+ * The CSS variable values are imported in CSSCustomProperties.less.
+ */
+figure[typeof~='mw:File/Thumb'],
+figure[typeof~='mw:File/Frame'] {
+  border: 1px solid var(--border-color-subtle, #c8ccd1);
+  border-bottom: 0;
+  background-color: var(--background-color-interactive-subtle, #f8f9fa);
+  color: var(--color-base, #202122);
+}
+figure[typeof~='mw:File/Thumb'] > :not( figcaption ) .mw-file-element,
+figure[typeof~='mw:File/Frame'] > :not( figcaption ) .mw-file-element {
+  background-color: var(--background-color-base, #fff);
+  border: 1px solid var(--border-color-subtle, #c8ccd1);
+}
+figure[typeof~='mw:File/Thumb'] > :not( figcaption ) .mw-file-element:not( .mw-broken-media ),
+figure[typeof~='mw:File/Frame'] > :not( figcaption ) .mw-file-element:not( .mw-broken-media ) {
+  background-color: var(--background-color-base-fixed, #fff);
+  color: var(--color-base-fixed, #202122);
+}
+figure[typeof~='mw:File/Thumb'] > figcaption,
+figure[typeof~='mw:File/Frame'] > figcaption {
+  border: 1px solid var(--border-color-subtle, #c8ccd1);
+  border-top: 0;
+  /* In mw-core the font-size is duplicated, 94% in thumbinner
+		 * and again 94% in thumbcaption. 88.4% for font size of the
+		 * caption results in the same behavior. */
+  font-size: 88.40000000000001%;
+}
+.mw-image-border .mw-file-element {
+  border: 1px solid #eaecf0;
+}
+figure[typeof~='mw:File/Thumb'] > figcaption::before {
+  content: '';
+  width: 15px;
+  height: 11px;
+  margin: 0;
+  margin-left: 3px;
+  margin-right: 0;
+  -webkit-margin-start: 3px;
+  -webkit-margin-end: 0;
+  /* stylelint-disable declaration-block-no-redundant-longhand-properties */
+  margin-inline-start: 3px;
+  margin-inline-end: 0;
+  /* stylelint-enable declaration-block-no-redundant-longhand-properties */
+  float: right;
+}
+.mw-content-ltr figure[typeof~='mw:File/Thumb'] > figcaption::before {
+  /* @noflip */
+  float: right;
+}
+.mw-content-rtl figure[typeof~='mw:File/Thumb'] > figcaption::before {
+  /* @noflip */
+  float: left;
+}
+body.skin--responsive figure[typeof~='mw:File/Thumb'] > figcaption::before {
+  /** Disable magnifying glass at lower resolutions */
+}
+@media all and (max-width: calc(640px - 1px)) {
+  body.skin--responsive figure[typeof~='mw:File/Thumb'] > figcaption::before {
+    content: none;
+  }
+}
+figure[typeof~='mw:File/Thumb'] > .mw-file-description,
+figure[typeof~='mw:File/Thumb'] > .mw-file-magnify {
+  display: block;
+  position: relative;
+}
+figure[typeof~='mw:File/Thumb'] > .mw-file-description::after,
+figure[typeof~='mw:File/Thumb'] > .mw-file-magnify::after {
+  content: '';
+  width: 15px;
+  height: 11px;
+  position: absolute;
+  bottom: -11px;
+  right: 6px;
+  background-image: url(magnify-clip-ltr.svg);
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /** Disable magnifying glass at lower resolutions to maximize space for caption. */
+}
+.skin-theme-clientpref-night figure[typeof~='mw:File/Thumb'] > .mw-file-description::after,
+.skin-theme-clientpref-night figure[typeof~='mw:File/Thumb'] > .mw-file-magnify::after {
+  filter: invert(1);
+}
+@media (prefers-color-scheme: dark) {
+  .skin-theme-clientpref-os figure[typeof~='mw:File/Thumb'] > .mw-file-description::after,
+  .skin-theme-clientpref-os figure[typeof~='mw:File/Thumb'] > .mw-file-magnify::after {
+    filter: invert(1);
+  }
+}
+.mw-content-ltr figure[typeof~='mw:File/Thumb'] > .mw-file-description::after,
+.mw-content-ltr figure[typeof~='mw:File/Thumb'] > .mw-file-magnify::after {
+  /* @noflip */
+  right: 6px;
+  /* @noflip */
+  left: auto;
+  /* @noflip */
+  background-image: url(magnify-clip-ltr.svg);
+}
+.mw-content-rtl figure[typeof~='mw:File/Thumb'] > .mw-file-description::after,
+.mw-content-rtl figure[typeof~='mw:File/Thumb'] > .mw-file-magnify::after {
+  /* @noflip */
+  right: auto;
+  /* @noflip */
+  left: 6px;
+  /* @noflip */
+  background-image: url(magnify-clip-rtl.svg);
+}
+@media all and (max-width: calc(640px - 1px)) {
+  figure[typeof~='mw:File/Thumb'] > .mw-file-description::after,
+  figure[typeof~='mw:File/Thumb'] > .mw-file-magnify::after {
+    /* stylelint-disable-next-line declaration-no-important */
+    background-image: none !important;
+  }
+}
+/**
+ * RESPONSIVE IMAGES FOR RESPONSIVE SKINS (T113101 and T367463)
+ * Note we restrict to img's to avoid conflicts with VisualEditor shields.
+ * Note this currently doesn't apply to frameless images (tracked in T367831) and
+ * does not currently apply to responsive images in MobileFrontend.
+ */
+body.skin--responsive .mw-parser-output {
+  /**
+	 * When the noresize class is used e.g. on a panorama or image map
+	 * with clickable regions (T22030), do not subject the image to a max-width rule.
+	 *
+	 * [[File:example.jpg|thumb|class=noresize]] and imagemap extension put the class on figure itself (T368034)
+	 */
+}
+body.skin--responsive .mw-parser-output figure img.mw-file-element {
+  height: auto;
+  max-width: 100%;
+}
+body.skin--responsive .mw-parser-output figure[typeof~='mw:File/Thumb'] img.mw-file-element,
+body.skin--responsive .mw-parser-output figure[typeof~='mw:File/Frame'] img.mw-file-element {
+  max-width: calc(100% - (2 * 3px) - (2 * 1px));
+}
+body.skin--responsive .mw-parser-output .noresize figure img.mw-file-element,
+body.skin--responsive .mw-parser-output figure.noresize img.mw-file-element {
+  max-width: none;
+}
+
+
+
+/* end   https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=mediawiki.skinning.content.parsoid&only=styles&skin=vector-2022&version=&* */

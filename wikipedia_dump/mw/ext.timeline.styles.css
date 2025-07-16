@@ -1,0 +1,13 @@
+
+/* start https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.timeline.styles&only=styles&skin=vector-2022&version=&* */
+
+
+/* Timelines can be very long and huge, like tables, so they should be scrollable. */
+.timeline-wrapper {
+	max-width: 100%;
+	overflow: auto;
+}
+
+
+
+/* end   https://en.wikipedia.org/w/load.php?debug=true&lang=en&modules=ext.timeline.styles&only=styles&skin=vector-2022&version=&* */
