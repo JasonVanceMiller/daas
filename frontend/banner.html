@@ -1,0 +1,21 @@
+<html>
+	<title>
+		Doc Portal
+	</title>
+	<link rel="stylesheet" href="styles.css">
+	<body>
+        <a href="index.html">
+		    <img src="home.jpeg" alt="Clickable Image" width="200">
+        </a>
+        <br><br>
+
+        <input id="searchbar_id" type="text" name="search" oninput="update_search_preview_func()">
+		<button onclick="search_func()">Search</button>
+		<button onclick="ai_search_func()">AI Search</button>
+		<div id="search_preview_list_id"></div>
+		
+		<div id="document_content_id"></div>
+	</body>
+    <!-- This is not actually ran when the html is inserted. There is a bit of magic in script.js -->
+    <!-- <script src="banner.js"></script> -->
+</html>

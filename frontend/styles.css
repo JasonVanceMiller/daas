@@ -1,0 +1,75 @@
+/* Gpt 4o-mini generated. idk css */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Buttons */
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Links */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    border-color: #4444ff;
+}
+
+/* Lists */
+ul, ol {
+    list-style: none; /* Remove default bullets/numbers */
+    padding: 0;
+    background-color: #4a90e2;
+    color: white;
+    border: 2px solid #000000; /* Border around each item */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin: 10px 0; /* Space between items */
+}

@@ -1,0 +1,1 @@
+I don't think we need anything complicated like astro. The frontend will have to have some dynamic content (preview search results, and hamburger menus). My thesis is that this is incredibly simple, and we don't even need a framework.
